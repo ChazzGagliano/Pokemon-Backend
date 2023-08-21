@@ -10,15 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_21_202937) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_21_203933) do
   create_table "pokemons", force: :cascade do |t|
     t.string "name"
     t.integer "level"
     t.string "ability"
-    t.string "region_id"
     t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "region_id"
   end
 
 end
