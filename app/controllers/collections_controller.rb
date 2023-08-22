@@ -12,4 +12,12 @@ class CollectionsController < ApplicationController
         @collection.save
         render :show
     end
+
+    def destroy
+        @collection = Collection.find_by(id: params["id"])
+        @collection.destroy
+        render json:{message: "pokemon transfered"}
+    end
+
+
 end

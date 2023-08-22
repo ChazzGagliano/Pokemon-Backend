@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
   get "/collections" => "collections#index"
   post "/collections" => "collections#create"
+  delete "/collections/:id" => "collections#destroy"
 end
