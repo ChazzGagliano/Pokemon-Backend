@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   post "/collections" => "collections#create"
   delete "/collections/:id" => "collections#destroy"
   get "/region/:id" => "regions#show"
+  get "/region" => "regions#index"
 end
